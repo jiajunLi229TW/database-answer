@@ -1,0 +1,27 @@
+1.Anand Beck
+
+2.37
+
+3.
+unchecked out book:
+Fellowship of 
+the Ring 
+1984 
+Tom Sawyer
+Catcher in the Rye
+To Kill a Mockingbird
+Domain Driven Design
+
+unchecked out movie:
+Thin Red Line
+Crouching Tiger, Hidden Dragon
+Lawrence of Arabia
+Office Space
+
+4.
+INSERT INTO member (id, name) VALUES (43, "Lee");
+INSERT INTO book VALUES (11, "The pragmatic Programmer");
+INSERT INTO checkout_item (member_id, book_id) VALUES (43, 11);
+
+5. Anand Beck and Frank Smith has checked out more than 1 item
+SELECT member_id, count(*) FROM checkout_item GROUP BY member_id;
